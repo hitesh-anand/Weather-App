@@ -8,6 +8,7 @@ $(document).ready(function () {
 });
 
 async function weatherFn(cName) {
+    console.log("Entered the fn");
 	const temp =
 		`${url}?q=${cName}&appid=${apiKey}&units=metric`;
 	try {
@@ -36,5 +37,5 @@ function weatherShowFn(data) {
 	$('#weather-icon').
 		attr('src',
 			`...`);
-	$('#weather-info').fadeIn();
+	// $('#weather-info').fadeIn();
 }
